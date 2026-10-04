@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 1 - Dasar-Dasar HTML</title>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <h1>STT Terpadu Nurul Fikri</h1>
+        <p>Kampus Technopreneur di Indonesia</p>
+        <nav>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#pendidikan">Riwayat Pendidikan</a></li>
+                <li><a href="#form-balita">Form Balita</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr/>
+
+    <!-- Main Content & Gambar -->
+    <div id="main" class="active">
+        <h2>Foto Profil / Latihan Gambar</h2>
+        <figure>
+            <img src="assets/img/foto.jpg" alt="Foto Profil" width="200">
+            <figcaption>Foto Latihan Praktikum</figcaption>
+        </figure>
+    </div>
+
+    <!-- Section 1: List -->
+    <section>
+        <h3>Menu Makanan & Minuman</h3>
+        <ol>
+            <li>Juice
+                <ul>
+                    <li>Mangga Rp. 5.000</li>
+                    <li>Durian Rp. 8.000</li>
+                </ul>
+            </li>
+            <li>Nasi Goreng
+                <ul>
+                    <li>Nasi Goreng Ayam Rp. 15.000</li>
+                    <li>Nasi Goreng Spesial Rp. 20.000</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Section 2: Tabel Pendidikan -->
+    <section id="pendidikan">
+        <h3>Tabel Riwayat Jenjang Pendidikan</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>NIM</th>
+                    <th>Nama Lengkap</th>
+                    <th>Jenjang Pendidikan</th>
+                    <th>Nama Sekolah / Kampus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>011001</td>
+                    <td>Ahmad Syauqi</td>
+                    <td>SD</td>
+                    <td>SDN 01 Depok</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>011001</td>
+                    <td>Muhammad Fatih</td>
+                    <td>SMP</td>
+                    <td>SMPN 2 Jakarta</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>011002</td>
+                    <td>Siti Nurhaliza</td>
+                    <td>SMA</td>
+                    <td>SMAN 1 Bogor</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>011026</td>
+                    <td>Baiturrohim</td>
+                    <td>Kuliah (S1)</td>
+                    <td>TI STT Terpadu Nurul Fikri</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Form Input -->
+    <section id="form-balita">
+        <h3>Form Data Anak Balita</h3>
+        <form action="" method="POST">
+            <p>
+                <label for="anak">Nama Anak:</label><br>
+                <input type="text" id="anak" name="anak" placeholder="Nama Anak" required />
+            </p>
+            <p>
+                <label for="umur">Umur Balita:</label><br>
+                <input type="number" id="umur" name="umur" min="0" max="5" placeholder="Masukkan umur Balita" />
+            </p>
+            <p>
+                <label for="deskripsi">Deskripsi:</label><br>
+                <textarea id="deskripsi" name="deskripsi" placeholder="Tulis Deskripsi Anak Anda" rows="4" cols="30"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Kirim" />
+            </p>
+        </form>
+    </section>
+
+    <!-- Artikel & Aside (Semantic Elements) -->
+    <article>
+        <header>
+            <h3>Tim IT Club STT-NF Meloloskan 3 Wakil di Lomba IT Mahasiswa Nasional Gemastik 10</h3>
+            <p>Published: <time datetime="2017-09-04">4 September 2017</time></p>
+        </header>
+        <p>
+            Tiga tim IT Club STT-NF yang mengikuti lomba IT tingkat mahasiswa nasional Gemastik 10 berhasil maju ke babak ke-2. Gemastik 10 tahun 2017 ini diadakan di kampus UI Depok.
+        </p>
+        <aside>
+            <p><strong>Catatan:</strong> Tahapan final Gemastik 10 akan digelar pada bulan Oktober 2017.</p>
+        </aside>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <hr/>
+        <p>&copy; 2026 STT Terpadu Nurul Fikri - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
